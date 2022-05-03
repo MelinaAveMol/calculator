@@ -1,6 +1,6 @@
 // Si pulso un botón de número diferente a cero y en el display hay un cero tiene
-// que sustituirse el cero por el número pulsado. Sino debe sustituirse el valor
-// de la pantalla nuevamente por 0. Si en el display hay un número diferente a cero contatenaré.
+// que sustituirse (=) el cero por el número pulsado. Sino debe sustituirse el valor
+// de la pantalla nuevamente por 0. Si en el display hay un número diferente a cero concatenaré(+=).
 
 // Si pulso en borrar el último caracter y sólo queda un caracter en la pantalla se debe
 // sustituir por un cero el valor de la pantalla. Descubrir una función de js para contar
@@ -32,8 +32,16 @@ numberButtons.forEach(numberButton =>{
         // En cualquier momento podemos ver que hay dentro de un div con innerHTML
         // console.log(display.innerHTML);
         display.innerHTML += numberButton.dataset.number;
+         
+        if(numberButton.dataset.number  ) {
+            //alert("");
+        }else if( >= ) {
+            //alert("");
+        }else{
+            //alert("");
+        }
 
-        alert(display.innerHTML.length);
+        //alert(display.innerHTML.length);
 
     });
 });
@@ -41,7 +49,7 @@ numberButtons.forEach(numberButton =>{
 operatorsButtons.forEach(operatorButton => {
 
     operatorButton.addEventListener('click',  () => {
-        display.innerHTML += operatorButton.dataset.operator;
+        display.innerHTML = operatorButton.dataset.operator;
     });
 });
 
